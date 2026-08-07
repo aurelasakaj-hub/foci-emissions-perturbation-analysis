@@ -1,3 +1,4 @@
+markdown
 # FOCI Emissions Perturbation Analysis: CEDS vs EDGAR Comparison
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
@@ -17,49 +18,77 @@ This repository contains a comprehensive analysis comparing two major global emi
 
 The analysis covers **8 key pollutants** (CH₄, CO, CO₂, NH₃, NMVOC, NOx, SO₂, N₂O) over the **2004-2019** period, with a focus on the **energy sector**.
 
-This work was conducted as part of the **FOCI** (Fostering Opportunities for Climate Innovation) project under **Horizon Europe**, contributing to improved understanding of non-CO₂ radiative forcers from energy production.
+This work was conducted as part of the **FOCI** (Fostering Opportunities for Climate Innovation) project under **Horizon Europe**.
+
+---
 
 ## Key Findings
 
-### 1. Global Discrepancies
-- **CEDS reports higher emissions** for CH₄, CO, NH₃, NMVOC, and N₂O
-- **EDGAR reports higher emissions** for CO₂ (gap reached ~1.28 million kt by 2019)
-- **CO and NOx** show early-period discrepancies that narrow over time
+| Pollutant | Pattern | Key Insight |
+|-----------|---------|-------------|
+| **CH₄** | Mixed | CEDS higher until 2008, then EDGAR surpasses |
+| **CO₂** | EDGAR > CEDS | Gap growing; ~1.28M kt difference by 2019 |
+| **SO₂** | Mixed | CEDS higher until 2013, then EDGAR exceeds |
+| **NMVOC** | CEDS > EDGAR | Convergence over time |
+| **NOx** | CEDS > EDGAR | Gap narrowing; ~11,210 kt by 2019 |
 
-### 2. Energy Sector Focus
-- **Oil and Natural Gas**: Largest discrepancies (CH₄: ±29% average, up to 33,311 kt in 2005)
-- **Electricity and Heat Production**: Major discrepancies for SO₂ and NOx
-- **Solid Fuels**: EDGAR reports higher emissions for CH₄ (China, Indonesia, India)
+- **Oil & Natural Gas**: Largest CH₄ discrepancies (up to 33,311 kt in 2005)
+- **Top Countries**: Russia, Venezuela, and China account for majority of discrepancies
+- **Perturbations**: Derived for CMIP6 SSP2-4.5 scenarios
 
-### 3. Top Emitting Countries
-- **Russia, Venezuela, and China** account for majority of global discrepancies
-- **Nigeria case study**: EDGAR shows anomalous CH₄ increase in 2019 requiring further investigation
-
-### 4. Perturbations for Climate Scenarios
-- Derived sector-specific percentage differences (2015-2019 average)
-- Applied to CMIP6 SSP2-4.5 projections from MESSAGE-GLOBIOM
-- Provides structural uncertainty estimates for climate modelling
+---
 
 ## Repository Structure
-
-```
 foci-emissions-perturbation-analysis/
-├── README.md                    # This file
-├── LICENSE                      # MIT License
-├── requirements.txt             # Python dependencies
+├── data/
+│ └── README.md # Data source information
 ├── notebooks/
-│   ├── 01_global_trends.ipynb   # Global emissions analysis
-│   ├── 02_energy_sector.ipynb   # Energy sector breakdown
-│   └── 03_country_analysis.ipynb # Top 10 countries + case studies
-├── scripts/
-│   ├── data_loader.py           # Load CEDS/EDGAR data
-│   └── analysis_utils.py        # Difference calculations, perturbations
+│ └── 01_global_trends.ipynb # Global emissions analysis
 ├── reports/
-│   ├── images/                  # Visualisations (PNG format)
-│   └── summary_findings.md      # Key results summary
-└── data/
-    └── README.md                # Data source information
-```
+│ ├── images/ # Visualisations
+│ └── summary_findings.md # Key results summary
+├── DISCLAIMER.md # NDA and privacy disclaimer
+├── LICENSE # MIT License
+├── README.md # This file
+└── requirements.txt # Python dependencies
+
+text
+
+---
+
+## Key Visualisations
+
+### Global Emission Trends
+
+![Global CH₄ Emissions](reports/images/Global%20CH%E2%82%84%20emissions%20(CEDS%20vs%20EDGAR).png)
+
+![Global CO₂ Emissions](reports/images/Global%20CO%E2%82%82%20emissions%20(CEDS%20vs%20EDGAR).png)
+
+![Global SO₂ Emissions](reports/images/Global%20SO%E2%82%82%20emissions%20(CEDS%20vs%20EDGAR).png)
+
+![Global NMVOC Emissions](reports/images/Global%20NMVOC%20emissions.png)
+
+![Global NOx Emissions](reports/images/Global%20NOx%20emissions.png)
+
+### Country-Level Analysis
+
+![Top 10 CH₄ Countries](reports/images/Top%2010%20countries%20CH%E2%82%84%20differences.png)
+
+### Regional Case Studies
+
+![Europe NOx](reports/images/Europe%20NOx%20emissions.png)
+
+![Europe SO₂](reports/images/Europe%20SO%E2%82%82%20emissions.png)
+
+### Future Scenarios
+
+![Future CH₄ Perturbation](reports/images/Future%20CH%E2%82%84%20projections%20with%20perturbation.png)
+
+### Spatial Analysis
+
+![Gridded Difference Map](reports/images/Gridded%20difference%20map.png)
+
+---
 
 ## Getting Started
 
@@ -68,87 +97,23 @@ foci-emissions-perturbation-analysis/
 ```bash
 Python 3.8+
 Jupyter Notebook or Jupyter Lab
-```
-
-### Installation
-
-```bash
-# Clone the repository
+Installation
+bash
 git clone https://github.com/aurelasakaj-hub/foci-emissions-perturbation-analysis.git
-
-# Navigate to directory
 cd foci-emissions-perturbation-analysis
-
-# Install dependencies
 pip install -r requirements.txt
-```
-
-### Run the Analysis
-
-```bash
 jupyter notebook notebooks/
-```
+Data Sources
+Dataset	Version	Source
+CEDS	v2024_04_01	Zenodo
+EDGAR	v8.0/v8.1	JRC Portal
+Author
+Aurela Sakaj
 
-## Key Visualisations
+LinkedIn: https://www.linkedin.com/in/aurela-sakaj/
 
-### Global Trends
+GitHub: https://github.com/aurelasakaj-hub
 
-| Pollutant | Key Finding |
-|-----------|-------------|
-| **CH₄** | CEDS higher until 2008, then EDGAR surpasses |
-| **CO₂** | EDGAR consistently higher; gap growing |
-| **NOx** | CEDS higher but narrowing |
-| **SO₂** | CEDS higher until 2013, then EDGAR surpasses |
-
-### Energy Sector Differences
-
-| Sector | Largest Discrepancy | Primary Pollutant |
-|--------|---------------------|-------------------|
-| Oil and Natural Gas | ±29-100% | CH₄, NMVOC |
-| Electricity & Heat | ±28-73% | CO, SO₂, NOx |
-| Solid Fuels | ±12-21% | SO₂, CH₄ |
-| Petroleum Refining | ±17-31% | CO₂, N₂O |
-
-## Data Sources
-
-| Dataset | Version | Source |
-|---------|---------|--------|
-| CEDS | v2024_04_01 | [Zenodo](https://zenodo.org/records/10904361) |
-| EDGAR | v8.0/v8.1 | [JRC Portal](https://edgar.jrc.ec.europa.eu/) |
-
-## Methodology
-
-### 1. Sector Mapping
-Cross-referenced CEDS and EDGAR sector classifications for accurate comparison.
-
-### 2. Difference Calculation
-- **Absolute Difference**: `|CEDS - EDGAR|`
-- **Percentage Difference**: `(Absolute / CEDS) × 100`
-
-### 3. Perturbation Generation
-- Averaged differences over 2015-2019
-- Applied to CMIP6 SSP2-4.5 projections
-- Used as proxy for structural uncertainty
-
-## Future Work
-
-- [ ] Apply country-level perturbations to gridded CEDS emissions
-- [ ] Incorporate satellite data (TROPOMI) for validation
-- [ ] Develop automated reporting pipeline
-- [ ] Extend to additional scenarios (SSP1-2.6, SSP5-8.5)
-
-## Author
-
-**Aurela Sakaj**
-- Data Scientist & Climate Analyst
-- [LinkedIn](https://www.linkedin.com/in/auraela-sakaj)
-- [GitHub](https://github.com/aurelasakaj-hub)
-- [Email](mailto:sakaura3@gmail.com)
-
-## Acknowledgements
-
-This work was performed under the **FOCI** project (Grant Agreement No 101003536), funded by the European Union's Horizon 2020 research and innovation programme.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Email:sakaura3@gmail.com
+Acknowledgements
+This work was performed under the FOCI project (Grant Agreement No 101003536), funded by the European Union's Horizon 2020 research and innovation programme.
