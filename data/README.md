@@ -38,3 +38,63 @@ This work was conducted as part of the **FOCI** (Fostering Opportunities for Cli
 ---
 
 ## Repository Structure
+
+```
+foci-emissions-perturbation-analysis/
+├── data/
+│   └── README.md                # Data source information
+├── notebooks/
+│   └── 01_global_trends.ipynb   # Global emissions analysis
+├── reports/
+│   ├── images/                  # Visualisations
+│   └── summary_findings.md      # Key results summary
+├── DISCLAIMER.md                # NDA and privacy disclaimer
+├── LICENSE                      # MIT License
+├── README.md                    # This file
+└── requirements.txt             # Python dependencies
+```
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+```bash
+Python 3.8+
+Jupyter Notebook or Jupyter Lab
+```
+
+### Installation
+
+```bash
+git clone https://github.com/aurelasakaj-hub/foci-emissions-perturbation-analysis.git
+cd foci-emissions-perturbation-analysis
+pip install -r requirements.txt
+jupyter notebook notebooks/
+```
+
+---
+
+## Data Sources
+
+| Dataset | Version | Source |
+|---------|---------|--------|
+| CEDS | v2024_04_01 | [Zenodo](https://zenodo.org/records/10904361) |
+| EDGAR | v8.0/v8.1 | [JRC Portal](https://edgar.jrc.ec.europa.eu/) |
+
+---
+
+## Author
+
+**Aurela Sakaj**
+
+- [LinkedIn](https://www.linkedin.com/in/auraela-sakaj)
+- [GitHub](https://github.com/aurelasakaj-hub)
+- [Email](mailto:sakaura3@gmail.com)
+
+---
+
+## Acknowledgements
+
+This work was performed under the **FOCI** project (Grant Agreement No 101003536), funded by the European Union's Horizon 2020 research and innovation programme.
