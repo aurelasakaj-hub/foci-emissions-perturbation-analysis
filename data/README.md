@@ -70,33 +70,33 @@ foci-emissions-perturbation-analysis/
 
 ### Global Emission Trends
 
-![Global CH₄ Emissions](reports/images/Global%20CH%E2%82%84%20emissions%20(CEDS%20vs%20EDGAR).png)
+<img src="reports/images/Global CH₄ emissions (CEDS vs EDGAR).png" alt="Global CH₄ Emissions" width="800">
 
-![Global CO₂ Emissions](reports/images/Global%20CO%E2%82%82%20emissions%20(CEDS%20vs%20EDGAR).png)
+<img src="reports/images/Global CO₂ emissions (CEDS vs EDGAR).png" alt="Global CO₂ Emissions" width="800">
 
-![Global SO₂ Emissions](reports/images/Global%20SO%E2%82%82%20emissions%20(CEDS%20vs%20EDGAR).png)
+<img src="reports/images/Global SO₂ emissions (CEDS vs EDGAR).png" alt="Global SO₂ Emissions" width="800">
 
-![Global NMVOC Emissions](reports/images/Global%20NMVOC%20emissions.png)
+<img src="reports/images/Global NMVOC emissions.png" alt="Global NMVOC Emissions" width="800">
 
-![Global NOx Emissions](reports/images/Global%20NOx%20emissions.png)
+<img src="reports/images/Global NOx emissions.png" alt="Global NOx Emissions" width="800">
 
 ### Country-Level Analysis
 
-![Top 10 CH₄ Countries](reports/images/Top%2010%20countries%20CH%E2%82%84%20differences.png)
+<img src="reports/images/Top 10 countries CH₄ differences.png" alt="Top 10 CH₄ Countries" width="800">
 
 ### Regional Case Studies
 
-![Europe NOx](reports/images/Europe%20NOx%20emissions.png)
+<img src="reports/images/Europe NOx emissions.png" alt="Europe NOx" width="800">
 
-![Europe SO₂](reports/images/Europe%20SO%E2%82%82%20emissions.png)
+<img src="reports/images/Europe SO₂ emissions.png" alt="Europe SO₂" width="800">
 
 ### Future Scenarios
 
-![Future CH₄ Perturbation](reports/images/Future%20CH%E2%82%84%20projections%20with%20perturbation.png)
+<img src="reports/images/Future CH₄ projections with perturbation.png" alt="Future CH₄ Perturbation" width="800">
 
 ### Spatial Analysis
 
-![Gridded Difference Map](reports/images/Gridded%20difference%20map.png)
+<img src="reports/images/Gridded difference map.png" alt="Gridded Difference Map" width="800">
 
 ---
 
