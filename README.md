@@ -1,139 +1,86 @@
-# CEDS–EDGAR Emissions Inventory Comparison
 
-**Python portfolio demonstration for comparing global emissions inventories**
+````markdown
+# CEDS-EDGAR Emissions Inventory Comparison
 
-## Overview
+A Python-based comparison of global emissions inventories, focusing on differences between the Community Emissions Data System (CEDS) and the Emissions Database for Global Atmospheric Research (EDGAR).
 
-This repository demonstrates a Python workflow for comparing emissions data from two major global inventories:
+This repository is a portfolio version of an emissions-inventory analysis workflow. The included notebook uses sample data to demonstrate data preparation, comparison and visualisation methods.
 
-- **CEDS** — Community Emissions Data System
-- **EDGAR** — Emissions Database for Global Atmospheric Research
+## Background
 
-The analysis is motivated by questions such as:
+CEDS and EDGAR are two widely used global anthropogenic emissions inventories.
 
-- How do different emissions inventories compare over time?
-- Where do their estimates diverge?
-- How can emissions data be cleaned, aggregated and visualised consistently?
-- How can differences between inventories be quantified and interpreted?
+**CEDS (Community Emissions Data System)** provides historical emissions by pollutant, country, sector and year and is widely used in atmospheric and climate modelling, including CMIP6-related research.
 
-The workflow is relevant to greenhouse gases and air pollutants including **CH₄, CO, CO₂, NH₃, NMVOC, NOx, SO₂ and N₂O**, with particular interest in emissions from the energy sector.
+**EDGAR (Emissions Database for Global Atmospheric Research)** is developed by the European Commission's Joint Research Centre (JRC) and provides global greenhouse-gas and air-pollutant emissions across countries, sectors and time periods.
 
-The project is informed by professional experience gained while contributing to emissions-data analysis within the **FOCI Horizon Europe project** at the World Energy & Meteorology Council (WEMC).
+Although both inventories describe anthropogenic emissions, their estimates can differ because of differences in activity data, emission factors, sector classifications, methodological assumptions and update procedures.
 
-> **Note:** The public notebook in this repository uses synthetic/sample data to demonstrate the analytical workflow. It does not reproduce original WEMC or FOCI project code, datasets, deliverables or unpublished results.
+Comparing the inventories helps identify where estimates diverge and where additional harmonisation or uncertainty analysis may be needed.
 
----
+## Analysis
 
-## About CEDS and EDGAR
+The workflow focuses on greenhouse gases and air pollutants including:
 
-### CEDS
+`CH4` `CO` `CO2` `NH3` `NMVOC` `NOx` `SO2` `N2O`
 
-**CEDS (Community Emissions Data System)** is a global historical emissions inventory widely used in atmospheric and climate research.
+The notebook demonstrates:
 
-It provides anthropogenic emissions by variables such as pollutant, country, sector and year and has been used in climate-model experiments, including work associated with CMIP6.
+- preparation and cleaning of emissions time series
+- aggregation by pollutant and year
+- comparison of emissions estimates between inventories
+- calculation of absolute and percentage differences
+- identification of discrepancies
+- visualisation of emissions trends
 
-### EDGAR
-
-**EDGAR (Emissions Database for Global Atmospheric Research)** is a global emissions inventory developed by the European Commission's Joint Research Centre (JRC).
-
-It provides greenhouse-gas and air-pollutant emissions across countries, economic sectors and time periods.
-
-### Why Compare Them?
-
-CEDS and EDGAR can provide different estimates for the same pollutant, country or sector because emissions inventories may differ in:
-
-- activity data;
-- emission factors;
-- sector classifications;
-- aggregation methods;
-- temporal coverage;
-- methodological assumptions; and
-- update cycles.
-
-Comparing inventories helps identify where estimates diverge and where further investigation, harmonisation or uncertainty assessment may be useful.
-
----
-
-## What This Repository Demonstrates
-
-The public notebook demonstrates how to:
-
-- load and structure emissions time-series data;
-- clean and prepare environmental datasets;
-- compare values from two emissions inventories;
-- calculate absolute and percentage differences;
-- aggregate emissions by pollutant and year;
-- visualise emissions trends;
-- identify discrepancies between datasets; and
-- structure a clear and reproducible Python analysis.
-
-The aim is to demonstrate environmental data-analysis skills and scientific reasoning rather than reproduce an official FOCI analysis.
-
----
-
-## Analytical Workflow
+A typical workflow is:
 
 ```text
 Emissions data
-      ↓
-Data cleaning and preparation
-      ↓
-Aggregation by pollutant and year
-      ↓
+      |
+      v
+Data preparation
+      |
+      v
+Aggregation
+      |
+      v
 Inventory comparison
-      ↓
-Absolute and percentage differences
-      ↓
-Visualisation
-      ↓
-Interpretation
+      |
+      v
+Difference calculation
+      |
+      v
+Visualisation and interpretation
 ```
 
-A more extensive emissions-inventory analysis can also include:
+The same approach can be extended to country-level, sector-level and spatial comparisons, as well as uncertainty and scenario analysis.
 
-- sector and subsector comparisons;
-- country-level analysis;
-- spatial analysis;
-- inventory harmonisation;
-- uncertainty assessment;
-- climate-scenario analysis; and
-- emissions perturbations for climate and air-quality modelling.
-
----
-
-## Repository Structure
+## Repository
 
 ```text
 foci-emissions-perturbation-analysis/
-│
+|
 ├── notebooks/
-│   └── 01_demo_global_trends_sample_data.ipynb
-│
+|   └── 01_demo_global_trends_sample_data.ipynb
+|
 ├── DISCLAIMER.md
 ├── README.md
 └── requirements.txt
 ```
 
----
+## Data
 
-## Data Sources
+The inventories referenced in this project are publicly available:
 
-The emissions inventories referenced in this project are publicly available.
+| Dataset | Source |
+|---|---|
+| CEDS | [Zenodo](https://zenodo.org/records/10904361) |
+| EDGAR | [European Commission JRC](https://edgar.jrc.ec.europa.eu/) |
 
-| Dataset | Description | Source |
-|---|---|---|
-| **CEDS** | Community Emissions Data System | [Zenodo](https://zenodo.org/records/10904361) |
-| **EDGAR** | Emissions Database for Global Atmospheric Research | [European Commission JRC](https://edgar.jrc.ec.europa.eu/) |
-
-The notebook currently included in this repository uses **synthetic/sample data** to illustrate the workflow.
-
-No original WEMC/FOCI working datasets, processed project files or unpublished project results are included.
-
----
+The notebook currently uses synthetic/sample data to illustrate the analysis. Original WEMC/FOCI working datasets, project files and unpublished results are not included in this repository.
 
 ## Tools
-
-The demonstration uses:
 
 - Python
 - pandas
@@ -141,16 +88,7 @@ The demonstration uses:
 - Matplotlib
 - Jupyter Notebook
 
----
-
-## Getting Started
-
-### Requirements
-
-- Python 3.8+
-- Jupyter Notebook or JupyterLab
-
-### Installation
+## Running the Notebook
 
 Clone the repository:
 
@@ -159,70 +97,46 @@ git clone https://github.com/aurelasakaj-hub/foci-emissions-perturbation-analysi
 cd foci-emissions-perturbation-analysis
 ```
 
-Install the required packages:
+Install the dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Launch Jupyter:
+Start Jupyter:
 
 ```bash
 jupyter notebook notebooks/
 ```
 
-Then open:
+Open:
 
 ```text
 01_demo_global_trends_sample_data.ipynb
 ```
 
----
+## Project Context
 
-## Professional Context
+The subject of this repository reflects professional experience gained while working with the **World Energy & Meteorology Council (WEMC)** and contributing to the **FOCI Horizon Europe project**.
 
-During my work with the **World Energy & Meteorology Council (WEMC)**, I contributed to the **FOCI Horizon Europe project**.
+My work included emissions-data analysis, CEDS and EDGAR inventory comparison, processing and quality control of large scientific datasets, statistical analysis, energy-sector emissions, and scientific reporting.
 
-My work included experience with:
+The public repository is an independent portfolio demonstration. It does not contain original WEMC/FOCI project code, confidential material, internal datasets, project deliverables or unpublished project results.
 
-- emissions-data collection and analysis;
-- CEDS and EDGAR emissions inventories;
-- processing and quality control of large scientific datasets;
-- emissions-inventory comparison and harmonisation;
-- statistical analysis;
-- energy-sector emissions;
-- climate and air-quality applications; and
-- scientific and technical reporting.
+### FOCI
 
-This repository is an **independent portfolio demonstration** and does not contain original WEMC/FOCI project code, confidential information, internal project datasets, project deliverables or unpublished project results.
+**Non-CO2 Forcers and their Climate, Weather, Air Quality and Health Impacts**
 
----
-
-## FOCI Project
-
-**FOCI — Non-CO₂ Forcers and their Climate, Weather, Air Quality and Health Impacts**
-
-- **Programme:** Horizon Europe
-- **Grant Agreement:** 101056783
-
-FOCI investigates non-CO₂ climate forcers and their impacts on climate, weather, air quality and health.
-
----
+Horizon Europe - Grant Agreement **101056783**
 
 ## Author
 
-**Aurela Sakaj**
+**Aurela Sakaj**  
+Climate & Environmental Data Scientist
 
-*Climate & Environmental Data Scientist | Meteorology | Emissions | Climate Data*
-
-- [GitHub](https://github.com/aurelasakaj-hub)
-- [LinkedIn](https://www.linkedin.com/in/aurela-sakaj/)
-- Email: sakaura3@gmail.com
-
----
+[GitHub](https://github.com/aurelasakaj-hub) | [LinkedIn](https://www.linkedin.com/in/aurela-sakaj/) | [Email](mailto:sakaura3@gmail.com)
 
 ## Disclaimer
 
-This repository is intended for professional portfolio and demonstration purposes.
-
-See [DISCLAIMER.md](DISCLAIMER.md) for additional information about data usage, project context and confidentiality.
+See [DISCLAIMER.md](DISCLAIMER.md) for information on project context, data usage and confidentiality.
+````
