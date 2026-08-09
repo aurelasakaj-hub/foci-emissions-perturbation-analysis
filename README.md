@@ -1,5 +1,4 @@
 
-````markdown
 # FOCI-emissions-inventory-comparison
 
 A Python-based comparison of global emissions inventories, focusing on differences between the Community Emissions Data System (CEDS) and the Emissions Database for Global Atmospheric Research (EDGAR).
@@ -139,4 +138,3 @@ Climate & Environmental Data Scientist
 ## Disclaimer
 
 See [DISCLAIMER.md](DISCLAIMER.md) for information on project context, data usage and confidentiality.
-````
