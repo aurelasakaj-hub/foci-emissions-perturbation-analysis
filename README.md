@@ -87,16 +87,23 @@ Absolute and percentage differences
 Visualisation
       ↓
 Interpretation
+```
+
 A more extensive emissions-inventory analysis can also include:
 
-sector and subsector comparisons;
-country-level analysis;
-spatial analysis;
-inventory harmonisation;
-uncertainty assessment;
-climate-scenario analysis; and
-emissions perturbations for climate and air-quality modelling.
-Repository Structure
+- sector and subsector comparisons;
+- country-level analysis;
+- spatial analysis;
+- inventory harmonisation;
+- uncertainty assessment;
+- climate-scenario analysis; and
+- emissions perturbations for climate and air-quality modelling.
+
+---
+
+## Repository Structure
+
+```text
 foci-emissions-perturbation-analysis/
 │
 ├── notebooks/
@@ -105,86 +112,117 @@ foci-emissions-perturbation-analysis/
 ├── DISCLAIMER.md
 ├── README.md
 └── requirements.txt
-Data Sources
+```
+
+---
+
+## Data Sources
 
 The emissions inventories referenced in this project are publicly available.
 
-Dataset	Description	Source
-CEDS	Community Emissions Data System	Zenodo
-EDGAR	Emissions Database for Global Atmospheric Research	European Commission JRC
+| Dataset | Description | Source |
+|---|---|---|
+| **CEDS** | Community Emissions Data System | [Zenodo](https://zenodo.org/records/10904361) |
+| **EDGAR** | Emissions Database for Global Atmospheric Research | [European Commission JRC](https://edgar.jrc.ec.europa.eu/) |
 
-The notebook currently included in this repository uses synthetic/sample data to illustrate the workflow.
+The notebook currently included in this repository uses **synthetic/sample data** to illustrate the workflow.
 
 No original WEMC/FOCI working datasets, processed project files or unpublished project results are included.
 
-Tools
+---
+
+## Tools
 
 The demonstration uses:
 
-Python
-pandas
-NumPy
-Matplotlib
-Jupyter Notebook
-Getting Started
-Requirements
-Python 3.8+
-Jupyter Notebook or JupyterLab
-Installation
+- Python
+- pandas
+- NumPy
+- Matplotlib
+- Jupyter Notebook
+
+---
+
+## Getting Started
+
+### Requirements
+
+- Python 3.8+
+- Jupyter Notebook or JupyterLab
+
+### Installation
 
 Clone the repository:
 
+```bash
 git clone https://github.com/aurelasakaj-hub/foci-emissions-perturbation-analysis.git
 cd foci-emissions-perturbation-analysis
+```
 
 Install the required packages:
 
+```bash
 pip install -r requirements.txt
+```
 
 Launch Jupyter:
 
+```bash
 jupyter notebook notebooks/
+```
 
 Then open:
 
+```text
 01_demo_global_trends_sample_data.ipynb
-Professional Context
+```
 
-During my work with the World Energy & Meteorology Council (WEMC), I contributed to the FOCI Horizon Europe project.
+---
+
+## Professional Context
+
+During my work with the **World Energy & Meteorology Council (WEMC)**, I contributed to the **FOCI Horizon Europe project**.
 
 My work included experience with:
 
-emissions-data collection and analysis;
-CEDS and EDGAR emissions inventories;
-processing and quality control of large scientific datasets;
-emissions-inventory comparison and harmonisation;
-statistical analysis;
-energy-sector emissions;
-climate and air-quality applications; and
-scientific and technical reporting.
+- emissions-data collection and analysis;
+- CEDS and EDGAR emissions inventories;
+- processing and quality control of large scientific datasets;
+- emissions-inventory comparison and harmonisation;
+- statistical analysis;
+- energy-sector emissions;
+- climate and air-quality applications; and
+- scientific and technical reporting.
 
-This repository is an independent portfolio demonstration and does not contain original WEMC/FOCI project code, confidential information, internal project datasets, project deliverables or unpublished project results.
+This repository is an **independent portfolio demonstration** and does not contain original WEMC/FOCI project code, confidential information, internal project datasets, project deliverables or unpublished project results.
 
-FOCI Project
+---
 
-FOCI — Non-CO₂ Forcers and their Climate, Weather, Air Quality and Health Impacts
+## FOCI Project
 
-Programme: Horizon Europe
-Grant Agreement: 101056783
+**FOCI — Non-CO₂ Forcers and their Climate, Weather, Air Quality and Health Impacts**
+
+- **Programme:** Horizon Europe
+- **Grant Agreement:** 101056783
 
 FOCI investigates non-CO₂ climate forcers and their impacts on climate, weather, air quality and health.
 
-Author
+---
 
-Aurela Sakaj
+## Author
 
-Climate & Environmental Data Scientist | Meteorology | Emissions | Climate Data
+**Aurela Sakaj**
 
-GitHub:aurelasakaj-hub
-LinkedIn: https://www.linkedin.com/in/aurela-sakaj/
-Email: sakaura3@gmail.com
-Disclaimer
+*Climate & Environmental Data Scientist | Meteorology | Emissions | Climate Data*
+
+- [GitHub](https://github.com/aurelasakaj-hub)
+- [LinkedIn](https://www.linkedin.com/in/aurela-sakaj/)
+- Email: sakaura3@gmail.com
+
+---
+
+## Disclaimer
 
 This repository is intended for professional portfolio and demonstration purposes.
 
-See DISCLAIMER.md for additional information about data usage, project context and confidentiality.
+See [DISCLAIMER.md](DISCLAIMER.md) for additional information about data usage, project context and confidentiality.
