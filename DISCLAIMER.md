@@ -8,8 +8,8 @@ The work is informed by professional experience gained while contributing to emi
 
 CEDS and EDGAR are publicly available emissions inventories:
 
-- **CEDS** — Community Emissions Data System
-- **EDGAR** — Emissions Database for Global Atmospheric Research
+- **CEDS** - Community Emissions Data System
+- **EDGAR** - Emissions Database for Global Atmospheric Research
 
 The notebook included in this repository uses synthetic/sample data to demonstrate the analysis workflow.
 
@@ -27,7 +27,7 @@ The analysis presented here is a portfolio demonstration and should not be inter
 
 ## FOCI
 
-**FOCI — Non-CO2 Forcers and their Climate, Weather, Air Quality and Health Impacts**
+**FOCI - Non-CO2 Forcers and their Climate, Weather, Air Quality and Health Impacts**
 
 Horizon Europe  
 Grant Agreement **101056783**
