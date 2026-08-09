@@ -1,44 +1,33 @@
-# DISCLAIMER
+# Disclaimer
 
-This repository contains a portfolio demonstration of analytical methods
-for comparing emissions inventories such as CEDS and EDGAR.
+This repository is an independent portfolio project based on methods used in emissions-inventory analysis.
 
-The project is informed by professional experience gained while contributing
-to emissions-data analysis within the FOCI Horizon Europe project.
+The work is informed by professional experience gained while contributing to emissions-data analysis within the **FOCI Horizon Europe project**.
 
-## Data Usage
+## Data
 
-The emissions inventories referenced in this repository are publicly available:
+CEDS and EDGAR are publicly available emissions inventories:
 
-- **CEDS** (Community Emissions Data System)
-- **EDGAR** (Emissions Database for Global Atmospheric Research)
+- **CEDS** — Community Emissions Data System
+- **EDGAR** — Emissions Database for Global Atmospheric Research
 
-The demonstration notebook currently uses synthetic/sample data to illustrate
-the analytical workflow.
+The notebook included in this repository uses synthetic/sample data to demonstrate the analysis workflow.
 
-## Confidentiality
+## Project Material
 
-This repository is intended for portfolio and demonstration purposes only.
+This repository does not contain:
 
-- No confidential WEMC or FOCI data are included
-- No internal reports or project deliverables are included
-- No unpublished FOCI results are presented
-- The public demonstration should not be interpreted as an official FOCI or WEMC analysis
+- confidential WEMC or FOCI data
+- internal reports or project deliverables
+- unpublished FOCI results
+- original WEMC/FOCI project code
+- internal working datasets or processed project files
 
-## Purpose
+The analysis presented here is a portfolio demonstration and should not be interpreted as an official analysis or result of WEMC or the FOCI project.
 
-This repository demonstrates:
+## FOCI
 
-- Python programming
-- Environmental data processing
-- Emissions-inventory comparison
-- Data quality and analytical workflows
-- Data visualisation
-- Understanding of CEDS and EDGAR emissions inventories
-
-## Project Context
-
-FOCI — **Non-CO₂ Forcers and their Climate, Weather, Air Quality and Health Impacts**
+**FOCI — Non-CO2 Forcers and their Climate, Weather, Air Quality and Health Impacts**
 
 Horizon Europe  
-Grant Agreement No. **101056783**
+Grant Agreement **101056783**
