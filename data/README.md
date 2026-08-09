@@ -17,7 +17,7 @@ This repository contains a comprehensive analysis comparing two major global emi
 
 The analysis covers **8 key pollutants** (CH₄, CO, CO₂, NH₃, NMVOC, NOx, SO₂, N₂O) over the **2004-2019** period, with a focus on the **energy sector**.
 
-This work was conducted as part of the **FOCI** (Fostering Opportunities for Climate Innovation) project under **Horizon Europe**.
+This work was conducted in the context of the **FOCI (Non-CO₂ Forcers and their Climate, Weather, Air Quality and Health Impacts)** Horizon Europe project.
 
 ---
 
@@ -97,4 +97,4 @@ jupyter notebook notebooks/
 
 ## Acknowledgements
 
-This work was performed under the **FOCI** project (Grant Agreement No 101003536), funded by the European Union's Horizon 2020 research and innovation programme.
+This work was performed in the context of the **FOCI – Non-CO₂ Forcers and their Climate, Weather, Air Quality and Health Impacts** project, funded by the European Union under Horizon Europe (Grant Agreement No. **101056783**).
